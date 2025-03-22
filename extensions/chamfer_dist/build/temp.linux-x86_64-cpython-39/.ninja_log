@@ -1,0 +1,4 @@
+# ninja log v5
+1	12157	1742607404583269393	/home/dylanleo/Documents/PointGST/extensions/chamfer_dist/build/temp.linux-x86_64-cpython-39/chamfer_cuda.o	3c6a80b752347ea2
+14	11378	1742607464141050972	/home/dylanleo/Documents/PointGST/extensions/chamfer_dist/build/temp.linux-x86_64-cpython-39/chamfer_cuda.o	2e92adfac2f4aa4d
+13	31345	1742607484140313622	/home/dylanleo/Documents/PointGST/extensions/chamfer_dist/build/temp.linux-x86_64-cpython-39/chamfer.o	4e190f2578ff6ff0

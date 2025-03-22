@@ -19,7 +19,10 @@ setup(
                 'cuda/emd.cpp',
                 'cuda/emd_kernel.cu',
             ],
-            extra_compile_args={'cxx': ['-g'], 'nvcc': ['-O2']}
+            extra_compile_args={
+                'cxx': ['-g'],
+                'nvcc': ['-O2', '-gencode', 'arch=compute_61,code=sm_61']
+            }
         ),
     ],
     cmdclass={

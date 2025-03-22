@@ -14,6 +14,10 @@ setup(name='chamfer',
           CUDAExtension('chamfer', [
               'chamfer_cuda.cpp',
               'chamfer.cu',
-          ]),
+          ],
+          extra_compile_args={
+              'cxx': ['-O3'],
+              'nvcc': ['-gencode', 'arch=compute_61,code=sm_61']
+          }),
       ],
       cmdclass={'build_ext': BuildExtension})

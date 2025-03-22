@@ -50,10 +50,13 @@ cd PointGST/
 ```bash
 conda create -y -n pgst python=3.9
 conda activate pgst
-pip install torch==2.0.0 torchvision==0.15.1 torchaudio==2.0.1 --index-url https://download.pytorch.org/whl/cu118
 
-# for local, since ubuntu 24 is hard to work with cuda 11.8
-conda install pytorch=2.1.0 torchvision=0.16.0 torchaudio=2.1.0 pytorch-cuda=12.1 -c pytorch -c nvidia
+pip install torch==2.0.0 torchvision==0.15.1 torchaudio==2.0.1 --index-url https://download.pytorch.org/whl/cu118
+conda install -c conda-forge cudatoolkit=11.8 cudatoolkit-dev
+nvcc --version  # check
+
+conda install -c conda-forge gcc_linux-64=10.3.0 gxx_linux-64=10.3.0
+g++ --version # check
 
 pip install -r requirements.txt
 
